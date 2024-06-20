@@ -1,0 +1,18 @@
+.section-container {
+    padding-top: 150px;
+
+    .card {
+        height: 200px;
+        max-height: 200px;
+
+        a {
+            color: #333;
+        }
+
+        a:hover {
+            color: #c2f300;
+            font-weight: bold;
+        }
+
+    }
+}
