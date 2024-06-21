@@ -56,7 +56,6 @@ export class CharactersPageComponent implements OnInit {
     }
   }
 
-
   redirectToDetails(characterId: number) {
     this.router.navigate(['/characters', characterId]);
   }
@@ -68,5 +67,4 @@ export class CharactersPageComponent implements OnInit {
       this.getCharactersList();
     }
   }
-
 }

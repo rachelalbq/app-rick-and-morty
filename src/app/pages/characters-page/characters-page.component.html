@@ -1,7 +1,5 @@
 <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }"></ngx-loading>
 
-
-
 <div class="section-container">
     <app-form-search (searchInput)="onSearch($event)"></app-form-search>
 
@@ -10,7 +8,7 @@
             <div class="col-md-4" *ngFor="let character of characters">
                 <div class="card mb-2" (click)="redirectToDetails(character.id)">
                     <div class="row justify-content-center align-items-center">
-                        <div class="col-md-4">
+                        <div class="col-md-4 text-sm-center">
                             <img [src]="character.image" class="card-img-top " alt="{{character.name}}">
                         </div>
 
@@ -20,7 +18,7 @@
                                 <p>{{character.status}} - {{character.species}}</p>
 
                                 <p class="location"><b>Last known location:</b></p>
-                                <p>{{character.location.name}}</p>
+                                <p class="location-name">{{character.location.name}}</p>
                             </div>
                         </div>
                     </div>

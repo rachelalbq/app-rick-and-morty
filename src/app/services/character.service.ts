@@ -11,8 +11,8 @@ export class CharacterService {
 
   constructor(private httpClient : HttpClient) {}
 
-  getCharacters(page: number, searchTerm: string = '') {
-    const url = `${this.apiUrl}?page=${page}&name=${searchTerm}`;
+  getCharacters(page: number, search: string = '') {
+    const url = `${this.apiUrl}?page=${page}&name=${search}`;
     return this.httpClient.get<CharacterResponse>(url);
   }
 

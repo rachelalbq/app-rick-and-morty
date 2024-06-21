@@ -2,8 +2,8 @@
     padding-top: 150px;
 
     .card {
-        height: 200px;
-        max-height: 200px;
+        height: 250px;
+        max-height: 250px;
 
         a {
             color: #333;
@@ -14,5 +14,29 @@
             font-weight: bold;
         }
 
+        .card-body {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 7;
+            -webkit-box-orient: vertical;
+            white-space: normal;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        img {
+            width: 120px;
+            margin-top: 10px;
+        }
+
+        .text-sm-center {
+            text-align: center;
+        }
+
+        .location,
+        .location-name {
+            display: none;
+        }
     }
 }
