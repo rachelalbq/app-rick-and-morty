@@ -1,4 +1,4 @@
-Projeto Angular - Detalhes dos Personagens
+# Projeto Angular - Detalhes dos Personagens
 
 # Descrição
 Este projeto é uma aplicação Angular que exibe detalhes de personagens. A aplicação utiliza a API de um serviço externo para obter os dados dos personagens e apresenta-os em uma interface amigável ao usuário.
