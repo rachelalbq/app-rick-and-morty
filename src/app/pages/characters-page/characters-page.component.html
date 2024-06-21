@@ -1,9 +1,11 @@
 <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }"></ngx-loading>
 
+
+
 <div class="section-container">
     <app-form-search (searchInput)="onSearch($event)"></app-form-search>
 
-    <div class="container mt-4 list" (window:scroll)="onScroll()">
+    <div class="container mt-4" (window:scroll)="onScroll()">
         <div class="row">
             <div class="col-md-4" *ngFor="let character of characters">
                 <div class="card mb-2" (click)="redirectToDetails(character.id)">
@@ -26,4 +28,6 @@
             </div>
         </div>
     </div>
+
+    <div *ngIf="!loading && characters.length === 0" class="text-center text-danger">Nenhum resultado encontrado</div>
 </div>

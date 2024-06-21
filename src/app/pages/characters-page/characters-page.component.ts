@@ -5,6 +5,7 @@ import { FormSearchComponent } from '../../shared/components/form-search/form-se
 import { Router, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { NgxLoadingModule } from 'ngx-loading';
+import { Character } from '../../shared/interfaces/characters';
 
 @Component({
   selector: 'app-characters-page',
@@ -15,8 +16,7 @@ import { NgxLoadingModule } from 'ngx-loading';
 })
 
 export class CharactersPageComponent implements OnInit {
-
-  characters: any[] = [];
+  characters: Character[] = [];
   page: number = 1;
   loading: boolean = false;
   search: string = '';

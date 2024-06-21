@@ -9,11 +9,11 @@ export const routes: Routes = [
     { path: 'characters/:id', component: CharactersDetailsPageComponent },
     { path: '**', redirectTo: '/characters' }
   ];
-  
 
   @NgModule({
     imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule]
   })
+
   export class AppRoutingModule { }
   
