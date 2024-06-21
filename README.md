@@ -35,9 +35,9 @@ Testes do CharactersDetailsPageComponent
 Verifica se o componente é criado corretamente e se os detalhes do personagem são carregados corretamente a partir do serviço.
 
 # Configuração e Execução
-Instalação
-Clone o repositório
-Instale as dependências utilizando npm install
-Execução
-Para iniciar o servidor de desenvolvimento, execute ng serve
-Para executar os testes, utilize ng test
+- Instalação
+- Clone o repositório
+- Instale as dependências utilizando npm install
+- Execução
+- Para iniciar o servidor de desenvolvimento, execute ng serve
+- Para executar os testes, utilize ng test
